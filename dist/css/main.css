@@ -9,23 +9,23 @@
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 
-.home__name {
+.home-name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
 
-.home__name--last {
+.home-name__sur {
   color: #ff652f;
   font-weight: 700;
 }
@@ -38,19 +38,18 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-btn__burger {
   position: absolute;
-  right: 0;
   top: 0.5rem;
   width: 28px;
   height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -59,9 +58,9 @@
   top: -8px;
   width: 28px;
   height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::after {
@@ -70,9 +69,9 @@
   top: 8px;
   width: 20px;
   height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger.open {
@@ -97,7 +96,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  opacity: 0.98;
+  opacity: .98;
   visibility: hidden;
 }
 
@@ -126,8 +125,8 @@
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav .menu-nav.open {
@@ -136,10 +135,10 @@
 }
 
 .nav .menu-nav__item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav__item.open {
@@ -157,8 +156,8 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav .menu-nav__link:hover {
@@ -192,8 +191,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +216,10 @@
 .about__bio {
   width: 80%;
   text-align: center;
+}
+
+.about__bio p {
+  line-height: 1.3;
 }
 
 .about__bio .text-secondary {
@@ -255,6 +258,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about footer {
@@ -269,8 +275,8 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,12 +324,12 @@
   position: absolute;
   top: 100%;
   left: 0;
-  height: 100%;
   width: 100%;
-  background: #ff652f;
+  height: 100%;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background: #ff652f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__item:hover::after {
@@ -354,8 +360,8 @@
 .projects__btn {
   opacity: 0;
   color: #000;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__btn:hover {
@@ -370,6 +376,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects footer {
@@ -391,8 +400,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 
@@ -406,7 +415,7 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  gap: 2rem;
   font-size: 1.5rem;
 }
 
@@ -415,7 +424,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -474,7 +483,7 @@
 }
 
 body {
-  background: #272727;
+  background-color: #272727;
   color: #fff;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -490,15 +499,11 @@ a {
   text-decoration: none;
 }
 
-.text-secondary {
-  color: #ff652f;
-}
-
 header {
   position: fixed;
   z-index: 2;
-  width: 100%;
   padding: 1rem;
+  width: 100%;
 }
 
 main {
@@ -513,21 +518,24 @@ main .social-icons {
 }
 
 main .social-icons a {
-  padding: 0.4rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  padding: 0.2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main .social-icons a:hover {
   color: #ff652f;
 }
 
+.text-secondary {
+  color: #ff652f;
+}
+
 footer {
   font-size: 1rem;
   position: fixed;
-  bottom: 0.4rem;
+  bottom: .4rem;
   right: 1rem;
-  text-align: right;
   padding: 1rem;
   color: #fff;
 }
